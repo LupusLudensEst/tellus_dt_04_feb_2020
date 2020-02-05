@@ -16,7 +16,7 @@ Test Case
 	Preconditions:
 Runnable on: Windows 10
 Browser: Chrome
-Tools: Pycharm, Selenium Webdriver
+Tools: Pycharm, Selenium Webdriver, Allure
 
 Testcase steps:
 1.	Go to https://4tellus.com/
