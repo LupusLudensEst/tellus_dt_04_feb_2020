@@ -1,15 +1,13 @@
-from time import sleep
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import ElementClickInterceptedException
-from selenium.webdriver.support import expected_conditions as EC
-from behave import given, when, then
-
+from behave import *
 
 @given("Loginpage")
-def pn_lgnpag(context):
+def open_homepage(context):
     context.app.main_page.open_page()
 
+
+@then("Click on login button")
+def clck_logn_bttn(context):
+    context.app.main_page.click_login_button()
 
 @then('Wrong login {login}')
 def wrng_lgn(context, login):
@@ -20,11 +18,13 @@ def wrng_psswrd(context, password):
     context.app.main_page.wrong_password(password)
 
 
-@then("Click on login button")
-def clck_logn_bttn(context):
-    context.app.main_page.click_login_button()
+@then("Click on login button after login and password are entered")
+def clck_logn_bttn_aftr_lgn_pswd_entrd(context):
+    context.app.main_page.click_login_button_aftr_entrd()
 
 
 @then('Verify "Invalid user name or password." sign is here')
 def alrt_is_hr(context):
     context.app.main_page.alert_is_here()
+
+
