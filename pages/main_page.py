@@ -42,6 +42,8 @@ class MainPage(Page):
         assert "Invalid user name or password." in self.driver.find_element(*self.ALRT_TEXT).text
         print('\nSign is here: ','"' ,str(self.driver.find_element(*self.ALRT_TEXT).text),'"' ,'.')
 
+
+
     # def click_on_forgot_password(self):
     #     """
     #     Clicks "Forgot Password?" button

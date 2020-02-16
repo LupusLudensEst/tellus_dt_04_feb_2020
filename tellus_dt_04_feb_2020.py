@@ -1,11 +1,10 @@
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import ElementClickInterceptedException
 
 driver = webdriver.Chrome()
 driver.maximize_window()
-driver.implicitly_wait(20)
+driver.implicitly_wait(10)
 
 # locators
 LOGN_BTN = (By.CSS_SELECTOR, "a.oauthloginbutton.btn.btn-social.btn-primary.da11y-submenu")
@@ -13,6 +12,7 @@ LGN_FLD = (By.CSS_SELECTOR, "input#username.validate")
 PSWRD_FLD = (By.ID, "password")
 LOGN_BTN_ENTRD = (By.ID, "kc-login")
 ALRT_TEXT = (By.CSS_SELECTOR, "span.kc-feedback-text")
+
 
 # open the url
 driver.get( 'https://4tellus.com/' )
