@@ -29,7 +29,7 @@ def msg(context, msg):
 @then("Click on Sumbit button")
 def clck_sbmt_bttn(context):
     context.app.contact_us_page.clck_sbmt_button()
-    sleep(3)
+    sleep(4)
 
 @then(
     'Verify "Thank you! A representative will be in touch." sign is here')
