@@ -32,7 +32,6 @@ def clck_sbmt_bttn(context):
     sleep(4)
 
 @then(
-    'Verify "Thank you! A representative will be in touch." sign is here')
-def txt_is_hr(context):
-    context.app.contact_us_page.txt_is_here()
-
+    'Verify {text_here} text is here')
+def txt_is_hr(context, text_here):
+    context.app.contact_us_page.txt_is_here(text_here)

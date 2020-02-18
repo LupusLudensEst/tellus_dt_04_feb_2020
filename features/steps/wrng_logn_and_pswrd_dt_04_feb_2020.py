@@ -23,8 +23,8 @@ def clck_logn_bttn_aftr_lgn_pswd_entrd(context):
     context.app.main_page.click_login_button_aftr_entrd()
 
 
-@then('Verify "Invalid user name or password." sign is here')
-def alrt_is_hr(context):
-    context.app.main_page.alert_is_here()
+@then('Verify {invld_nm} sign is here')
+def alrt_is_hr(context, invld_nm):
+    context.app.main_page.alert_is_here(invld_nm)
 
 

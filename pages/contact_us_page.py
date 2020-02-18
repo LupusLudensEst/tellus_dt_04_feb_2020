@@ -59,11 +59,9 @@ class ContactUsPage(Page):
         """
         self.click(*self.SUBMIT_BTN)
 
-    def txt_is_here(self):
+    def txt_is_here(self, text):
         """
         Text is here
         """
-        assert "Thank you! A representative will be in touch." in self.driver.find_element(*self.TEXT).text
-        print('\nSign is here: ', '"', str(self.driver.find_element(*self.TEXT).text), '"', '.')
-
+        self.verify_text(text, *self.TEXT)
 

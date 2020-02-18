@@ -10,4 +10,4 @@ Feature: Contact us form
     Then Phone Number 1 407 435 44 33
     Then Message Test_message
     Then Click on Sumbit button
-    Then Verify "Thank you! A representative will be in touch." sign is here
+    Then Verify Thank you! A representative will be in touch. text is here

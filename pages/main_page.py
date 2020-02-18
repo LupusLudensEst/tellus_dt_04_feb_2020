@@ -35,14 +35,11 @@ class MainPage(Page):
         """
         self.click(*self.LOGN_BTN_ENTRD)
 
-    def alert_is_here(self):
+    def alert_is_here(self, text):
         """
         Alert is here
         """
-        assert "Invalid user name or password." in self.driver.find_element(*self.ALRT_TEXT).text
-        print('\nSign is here: ','"' ,str(self.driver.find_element(*self.ALRT_TEXT).text),'"' ,'.')
-
-
+        self.verify_text(text, *self.ALRT_TEXT)
 
     # def click_on_forgot_password(self):
     #     """
