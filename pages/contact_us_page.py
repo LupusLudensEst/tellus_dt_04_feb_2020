@@ -58,6 +58,7 @@ class ContactUsPage(Page):
         Click on submit us button
         """
         self.click(*self.SUBMIT_BTN)
+    sleep(4)
 
     def txt_is_here(self, text):
         """

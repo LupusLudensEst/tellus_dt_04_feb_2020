@@ -31,7 +31,6 @@ def clck_sbmt_bttn(context):
     context.app.contact_us_page.clck_sbmt_button()
     sleep(4)
 
-@then(
-    'Verify {text_here} text is here')
+@then('Verify {text_here} text is here')
 def txt_is_hr(context, text_here):
     context.app.contact_us_page.txt_is_here(text_here)
