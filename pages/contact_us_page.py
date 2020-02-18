@@ -22,7 +22,7 @@ class ContactUsPage(Page):
 
     def frst_nm_entered(self, text):
         """
-        Input first name
+        Input first name in the iframe
         """
         sleep(4)
         self.driver.switch_to.frame(self.driver.find_element_by_xpath(
