@@ -1,5 +1,6 @@
 from pages.main_page import MainPage
 from pages.contact_us_page import ContactUsPage
+from pages.restore_password_page import RestorePasswordPage
 
 class Application:
 
@@ -8,3 +9,4 @@ class Application:
 
         self.main_page = MainPage(self.driver)
         self.contact_us_page = ContactUsPage(self.driver)
+        self.restore_password_page = RestorePasswordPage(self.driver)

@@ -41,35 +41,4 @@ class MainPage(Page):
         """
         self.verify_text(text, *self.ALRT_TEXT)
 
-    # def click_on_forgot_password(self):
-    #     """
-    #     Clicks "Forgot Password?" button
-    #     """
-    #     self.click(*self.FORGOT_PASSWORD_BTN)
-    #
-    # def forgot_passw_instruct(self):
-    #     """
-    #     Verify "Enter your Email and we'll send you a link to change your password." sign is here
-    #     """
-    #     assert "Enter your Email and we'll send you a link to change your password" in self.driver.find_element(*self.FORGOT_PASSWORD_INSTR).text
-    #     print('\nSign is here: ','"' ,str(self.driver.find_element(*self.FORGOT_PASSWORD_INSTR).text),'"' ,'.')
-    #
-    # def enter_email_for_restoring(self, text):
-    #     """
-    #     Input email "RestoreAccess@gmail.com" for restoring access
-    #     """
-    #     self.input_text(text, *self.FORGOT_EMAIL_FIELD)
-    #
-    # def click_on_restore_psswrd_btn(self):
-    #     """
-    #     Click on Request Password button
-    #     """
-    #     self.driver.find_elements(*self.RQST_PSWRD_BTN)[-1].click()
-    #
-    # def password_cnfrmtn_snt(self):
-    #     """
-    #     Verify "Password confirmation sent to RestoreAccess@gmail.com.Make sure you check your spam box." sign is here
-    #     """
-    #     assert "Password confirmation sent to RestoreAccess@gmail.com. Make sure you check your spam box." in self.driver.find_element(
-    #         *self.PSSWRD_CNFRMTN_SNT).text
-    #     print('\nSign is here: ', '"', str(self.driver.find_element(*self.PSSWRD_CNFRMTN_SNT).text), '"', '.')
+
