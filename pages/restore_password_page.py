@@ -5,11 +5,17 @@ from pages.base_page import Page
 class RestorePasswordPage(Page):
 
     # locators
-    FORGOT_PASSWORD_BTN = (By.XPATH, "//a[@tabindex='5']")
+    LGN_TLLS_BUTTON = (By.NAME, "oauthloginbutton btn btn-social btn-primary da11y-submenu")
+    FORGOT_PASSWORD_BTN = (By.XPATH, "//a[@href='https://evv-dashboard.4tellus.net/forgot-password']") # (By.XPATH, "//a[@tabindex='5']")
     USER_NAME = (By.NAME, "userName")
     RESET_PASSWORD = (By.CSS_SELECTOR, "span.mat-button-wrapper")
     USR_NT_FND = (By.XPATH, "//span[@class='text']")
 
+    def lgn_tlls_button(self):
+        """
+        click on Login Tellus EVV us button
+        """
+        self.click(*self.LGN_TLLS_BUTTON)
 
     def clck_frgt_pswd_button(self):
         """
@@ -28,6 +34,7 @@ class RestorePasswordPage(Page):
         click on reset password button
         """
         self.click(*self.RESET_PASSWORD)
+    sleep(8)
 
     def txt_s_here(self, text):
         """

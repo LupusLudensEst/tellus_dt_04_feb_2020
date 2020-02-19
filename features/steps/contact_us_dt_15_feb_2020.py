@@ -29,7 +29,7 @@ def msg(context, msg):
 @then("Click on Sumbit button")
 def clck_sbmt_bttn(context):
     context.app.contact_us_page.clck_sbmt_button()
-    sleep(4)
+    sleep(8)
 
 @then('Verify {text_here} text is here')
 def txt_is_hr(context, text_here):
