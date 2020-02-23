@@ -34,6 +34,7 @@ class MainPage(Page):
         Click on login button
         """
         self.click(*self.LOGN_BTN_ENTRD)
+        sleep(4)
 
     def alert_is_here(self, text):
         """
