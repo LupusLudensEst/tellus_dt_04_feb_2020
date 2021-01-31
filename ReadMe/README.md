@@ -39,5 +39,6 @@ $ pip install pytest-allure-adaptor
 
 to launch tests and generate reports folder: 
 $ behave -f allure_behave.formatter:AllureFormatter -o test_results/ features/
+
 to extract report into browser: 
 $ allure serve test_results/
